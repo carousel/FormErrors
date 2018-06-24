@@ -1,5 +1,5 @@
 {
-  "name": "FormErrors",
+  "name": "form-errors",
   "version": "1.0.0",
   "description": "Form errors class for Vue.js projects",
   "main": "index.js",
