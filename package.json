@@ -1,0 +1,12 @@
+{
+  "name": "FormErrors",
+  "version": "1.0.0",
+  "description": "Form errors class for Vue.js projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["form","errors","vue.js"],
+  "author": "Miroslav Trninic <miroslav.trninic@gmail.com>",
+  "license": "ISC"
+}
