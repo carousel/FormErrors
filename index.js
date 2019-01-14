@@ -1,2 +1,2 @@
-require('Form');
-require('FormErrors');
+module.exports.Form = require('./form');
+module.exports.FormErrors = require('./formErrors');

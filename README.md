@@ -1,3 +1,13 @@
-# FormErrors
+# VueFormErrors
+miroslav.trninic@gmail.com
 
-* simple class for easier errors handling in Vue.js projects
+
+easy errors handling for Vue.js forms
+~~~~
+
+`var VueForm = require('./index.js').Form;
+
+`var VueFormErrors = require('./index.js').FormErrors;`
+~~~~
+
+...
