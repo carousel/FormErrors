@@ -2,10 +2,9 @@ var axios = require('axios');
 var FormErrors = require('./formErrors');
 
  module.exports   =  class Form {
-        constructor(data, instance) {
+        constructor(data) {
             this.originalData = data;
             this.errors = {}
-            this.instance = instance
             for (let field in data) {
                 this[field] = data[field];
             }
@@ -22,12 +21,6 @@ var FormErrors = require('./formErrors');
             for (let field in this.originalData) {
                 data[field] = this[field]
             }
-            if (data['topic1']) {
-                data['topic'] = data['topic1']
-            }
-            if (data['occupation1']) {
-                data['occupation'] = data['occupation1']
-            }
             return data;
         }
         submit(method, url) {
@@ -38,9 +31,6 @@ var FormErrors = require('./formErrors');
                         resolve(response.data);
                     })
                     .catch(error => {
-                        if (this.instance) {
-                            this.instance.loading()
-                        }
                         this.onFail(error.response.data.errors)
                         reject(error.response.data.errors)
                     })
