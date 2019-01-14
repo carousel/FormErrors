@@ -1,6 +1,6 @@
 {
   "name": "vue-form-errors",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Form errors class for Vue.js projects",
   "main": "index.js",
   "scripts": {
