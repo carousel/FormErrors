@@ -23,9 +23,9 @@ var FormErrors = require('./formErrors');
             }
             return data;
         }
-        submit(method, url) {
+        submit(method, url, headers) {
             return new Promise((resolve, reject) => {
-                axios[method](url, this.data())
+                axios[method](url, this.data(), headers)
                     .then(response => {
                         this.onSuccess(response.data);
                         resolve(response.data);
